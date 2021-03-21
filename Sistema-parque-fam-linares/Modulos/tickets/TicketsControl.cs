@@ -16,7 +16,7 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            this.timerActualizadorFecha.Start();
+            // this.timerActualizadorFecha.Start();
         }
 
         private void TicketsControl_Load(object sender, EventArgs e)
@@ -43,7 +43,6 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
         {
             this.fechaIngreso.Value = DateTime.Now;
             this.horaIngreso.Value = DateTime.Now;
-            // MessageBox.Show("Hola");
         }
     }
 }
