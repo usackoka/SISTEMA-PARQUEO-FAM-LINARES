@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnGenerarTicket.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAbsAAAG7ATrs4+IAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAC+0lEQVR4Xu3bsU5UQRQG4JFAtEIqaxISIjZ0QIkJ8Q2ID0AstDKGFzA2JrbaktgZOjpojLUPYLCy
+        MGpnoZbi+v9kxpyd/efu3rvXu8POneQr/Hc4Z+ZEwi67uMFgUDQZlkSGVbA24BW8ywzPtKHOXEWGKVgL
+        8An4jxzxbAvq7CkyTMHa9o1ytq3OniLDFKxd0yhXu+rsKTJMYXHTKHgBz2eEvePzdD6AG2pvF9jbnCPo
+        B6D2psgwhcVNo6AfgNrbBfY25wj6Aai9KTJMYXHTKOgHoPZ2gb3NOYJ+AGpvigxTWNw0CuZnAFh8sXOb
+        RRIeg21G90Dt7QJ7x+fhGdVe4t2GXiyFiy/BM/gFttg84h151yV/d3cNTiHeOO94Z97dPfBBiXh399YE
+        peHd3Q8TlIZ3lw+URIYlkWFJZJirp3DLPpEJsO7AG4i/ZhwZ5ui9uriFtQw//f5JyTBHJ+rSFtYifPH7
+        JyXDHP2Gu+rihMXLP4H468aRYc4+gHpr7Cuo/ePIsCQyLIkMSyLDksiwJDIsiQxLIsOSyLAkMiyJDOu4
+        CXyDYhbYW52pDhnWkds7Q3XJsI4rP4DvUVDXyACwtuA1qFdtTbDWlugz7QB4d3dmgiaGBoDV5Lcyk2DN
+        5ajXtAPg3d2+CZqIB7BnHmvbXtRr2gHsh0JHJqwrHgB/M/PZP9Ym1lyMek0zgKPLGqbYAXyEP2A3jnM9
+        1DC1+G3wENSHG5t4BEP//X2fugPg3XjHg381bMHLwLkV4Pvoyn2wBSm3nwI8ozo7rYzUiIMqWDtgm5Ec
+        ABY/bMEDtkF+Atw/Zs9CO2pvigxTWNw0CkYGgHUI3/zjbWCtQ9EnvwFgrcKFf6xNrLka9cpyAHwSFO9p
+        y9CTIaxsvwWOoe5PkyqsdSz65DkAv3cN1Ce1mlhL9Mh3AF1gb3OOoB+A2psiwxQWN42C3P5kpvMB5Oa/
+        DmDTNMrVpjp7igyrYJ2bZrk5V2euIsMqWOvwEtRvbmaJZ1pXZ64iw5LIsBwD9xfbLLRaw/vsRQAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <metadata name="timerActualizadorFecha.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

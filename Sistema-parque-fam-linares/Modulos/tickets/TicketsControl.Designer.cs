@@ -29,11 +29,15 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicketsControl));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.fechaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.horaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.btnGenerarTicket = new System.Windows.Forms.Button();
+            this.timerActualizadorFecha = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -65,33 +69,52 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             this.label2.TabIndex = 2;
             this.label2.Text = "Número de placa";
             // 
-            // dateTimePicker1
+            // fechaIngreso
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("MS PGothic", 19.8F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(100, 118);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowCheckBox = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(356, 40);
-            this.dateTimePicker1.TabIndex = 3;
+            this.fechaIngreso.Checked = false;
+            this.fechaIngreso.Font = new System.Drawing.Font("MS PGothic", 19.8F);
+            this.fechaIngreso.Location = new System.Drawing.Point(100, 118);
+            this.fechaIngreso.Name = "fechaIngreso";
+            this.fechaIngreso.ShowCheckBox = true;
+            this.fechaIngreso.Size = new System.Drawing.Size(356, 40);
+            this.fechaIngreso.TabIndex = 3;
             // 
-            // dateTimePicker2
+            // horaIngreso
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("MS PGothic", 19.8F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(471, 118);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.ShowCheckBox = true;
-            this.dateTimePicker2.ShowUpDown = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(190, 40);
-            this.dateTimePicker2.TabIndex = 5;
+            this.horaIngreso.Checked = false;
+            this.horaIngreso.Font = new System.Drawing.Font("MS PGothic", 19.8F);
+            this.horaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.horaIngreso.Location = new System.Drawing.Point(471, 118);
+            this.horaIngreso.Name = "horaIngreso";
+            this.horaIngreso.ShowCheckBox = true;
+            this.horaIngreso.ShowUpDown = true;
+            this.horaIngreso.Size = new System.Drawing.Size(190, 40);
+            this.horaIngreso.TabIndex = 5;
+            // 
+            // btnGenerarTicket
+            // 
+            this.btnGenerarTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarTicket.ForeColor = System.Drawing.Color.DimGray;
+            this.btnGenerarTicket.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerarTicket.Image")));
+            this.btnGenerarTicket.Location = new System.Drawing.Point(322, 320);
+            this.btnGenerarTicket.Name = "btnGenerarTicket";
+            this.btnGenerarTicket.Size = new System.Drawing.Size(134, 92);
+            this.btnGenerarTicket.TabIndex = 6;
+            this.btnGenerarTicket.UseVisualStyleBackColor = true;
+            this.btnGenerarTicket.Click += new System.EventHandler(this.btnGenerarTicket_Click);
+            // 
+            // timerActualizadorFecha
+            // 
+            this.timerActualizadorFecha.Tick += new System.EventHandler(this.timerActualizadorFecha_Tick);
             // 
             // TicketsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnGenerarTicket);
+            this.Controls.Add(this.horaIngreso);
+            this.Controls.Add(this.fechaIngreso);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -108,7 +131,9 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker fechaIngreso;
+        private System.Windows.Forms.DateTimePicker horaIngreso;
+        private System.Windows.Forms.Button btnGenerarTicket;
+        private System.Windows.Forms.Timer timerActualizadorFecha;
     }
 }
