@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_parque_fam_linares.Modulos.tickets;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +17,16 @@ namespace Sistema_parque_fam_linares
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
+        //Pantallas
+        private TicketsControl ticketsControl;
+
         public Form1()
         {
             InitializeComponent();
             statusPanel.Height = btnInicio.Height;
             statusPanel.Top = btnInicio.Top;
+            this.ticketsControl = new TicketsControl();
+            this.panelMaster.Controls.Add(this.ticketsControl);
         }
 
         private void button3_Click(object sender, EventArgs e)

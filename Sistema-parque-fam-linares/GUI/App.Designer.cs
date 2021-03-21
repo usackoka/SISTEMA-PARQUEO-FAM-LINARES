@@ -38,6 +38,7 @@ namespace Sistema_parque_fam_linares
             this.label1 = new System.Windows.Forms.Label();
             this.statusPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panelMaster = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -125,12 +126,13 @@ namespace Sistema_parque_fam_linares
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 9);
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(9, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 144);
+            this.label1.Size = new System.Drawing.Size(264, 104);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Parqueo \r\nLinares";
+            this.label1.Text = "Multiservicios \r\nFaustino";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label1_MouseMove);
             this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label1_MouseUp);
@@ -146,11 +148,22 @@ namespace Sistema_parque_fam_linares
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DimGray;
+            this.panel4.Controls.Add(this.panelMaster);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Location = new System.Drawing.Point(323, 25);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(894, 710);
             this.panel4.TabIndex = 3;
+            // 
+            // panelMaster
+            // 
+            this.panelMaster.BackColor = System.Drawing.Color.DimGray;
+            this.panelMaster.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelMaster.ForeColor = System.Drawing.Color.Black;
+            this.panelMaster.Location = new System.Drawing.Point(0, 82);
+            this.panelMaster.Name = "panelMaster";
+            this.panelMaster.Size = new System.Drawing.Size(894, 628);
+            this.panelMaster.TabIndex = 1;
             // 
             // panel5
             // 
@@ -216,6 +229,7 @@ namespace Sistema_parque_fam_linares
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panelMaster;
     }
 }
 
