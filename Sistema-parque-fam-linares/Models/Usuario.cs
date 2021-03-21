@@ -9,12 +9,8 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Sistema_parque_fam_linares.Models
 {
-    public class Usuario
+    public class Usuario : MongoRegister<Usuario>
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
-
         [BsonElement("primerNombre")]
         public string primerNombre { get; set; }
 

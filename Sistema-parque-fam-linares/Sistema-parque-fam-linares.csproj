@@ -112,14 +112,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\MongoConfig.cs" />
     <Compile Include="GUI\App.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\App.Designer.cs">
       <DependentUpon>App.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\MongoRegister.cs" />
     <Compile Include="Models\Usuario.cs" />
-    <Compile Include="Models\IAudited.cs" />
     <Compile Include="Models\Ticket.cs" />
     <Compile Include="Modulos\tickets\TicketsControl.cs">
       <SubType>UserControl</SubType>

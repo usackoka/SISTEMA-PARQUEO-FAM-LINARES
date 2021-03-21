@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Driver;
+using Sistema_parque_fam_linares.DB;
 using Sistema_parque_fam_linares.Models;
 
 namespace Sistema_parque_fam_linares
@@ -19,16 +20,9 @@ namespace Sistema_parque_fam_linares
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-
-            var client = new MongoClient("mongodb://local:local_pass@localhost:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false");
-            var database = client.GetDatabase("multiservicios");
-            var userDB = database.GetCollection<Usuario>("usuario");
-
-            var usuario = new Usuario() { primerApellido = "Cuéllar", primerNombre = "Oscar", segundoApellido = "Mancilla", segundoNombre = "René" };
-            // userDB.InsertOne(usuario);
-            // List<Usuario> list = userDB.Find(d => true).ToList();
-            // userDB.ReplaceOne(d => d.Id == "605784872b465f60acfe2b61", usuario);
-            // userDB.DeleteOne(d=>d.Id == "605784872b465f60acfe2b61");
+            MongoConfig.initialize();
+            Usuario user = new Usuario() { primerNombre = "Diana", segundoNombre = "Sofia", primerApellido = "Guzman", segundoApellido = "Mancilla" };
+            
         }
     }
 }
