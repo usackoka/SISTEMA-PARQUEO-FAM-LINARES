@@ -126,8 +126,15 @@
     <Compile Include="GUI\App.Designer.cs">
       <DependentUpon>App.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\TipoVehiculo.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Ticket.cs" />
+    <Compile Include="Modulos\reportes\ReportsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\reportes\ReportsControl.Designer.cs">
+      <DependentUpon>ReportsControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\tickets\TicketsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +145,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\App.resx">
       <DependentUpon>App.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\reportes\ReportsControl.resx">
+      <DependentUpon>ReportsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\tickets\TicketsControl.resx">
       <DependentUpon>TicketsControl.cs</DependentUpon>

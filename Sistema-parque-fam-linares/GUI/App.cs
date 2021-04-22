@@ -1,4 +1,5 @@
 ﻿using IronBarCode;
+using Sistema_parque_fam_linares.Modulos.reportes;
 using Sistema_parque_fam_linares.Modulos.tickets;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace Sistema_parque_fam_linares
 
         //Pantallas
         private TicketsControl ticketsControl;
+        private ReportsControl reportsControl;
 
         public Form1()
         {
@@ -27,6 +29,7 @@ namespace Sistema_parque_fam_linares
             statusPanel.Height = btnInicio.Height;
             statusPanel.Top = btnInicio.Top;
             this.ticketsControl = new TicketsControl();
+            this.reportsControl = new ReportsControl();
             this.panelMaster.Controls.Add(this.ticketsControl);
             // this.GenerateBacode("Hola info a codificar", "filename.jpg");
         }
@@ -40,6 +43,9 @@ namespace Sistema_parque_fam_linares
         {
             statusPanel.Height = btnInicio.Height;
             statusPanel.Top = btnInicio.Top;
+
+            this.panelMaster.Controls.RemoveAt(0);
+            this.panelMaster.Controls.Add(this.ticketsControl);
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
@@ -52,6 +58,9 @@ namespace Sistema_parque_fam_linares
         {
             statusPanel.Height = btnReportes.Height;
             statusPanel.Top = btnReportes.Top;
+
+            this.panelMaster.Controls.RemoveAt(0);
+            this.panelMaster.Controls.Add(this.reportsControl);
         }
 
         //Métodos de movimiento del form
