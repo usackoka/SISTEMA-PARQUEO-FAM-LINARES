@@ -1,4 +1,5 @@
-﻿using Sistema_parque_fam_linares.Modulos.tickets;
+﻿using IronBarCode;
+using Sistema_parque_fam_linares.Modulos.tickets;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,7 @@ namespace Sistema_parque_fam_linares
             statusPanel.Top = btnInicio.Top;
             this.ticketsControl = new TicketsControl();
             this.panelMaster.Controls.Add(this.ticketsControl);
+            // this.GenerateBacode("Hola info a codificar", "filename.jpg");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -102,6 +104,24 @@ namespace Sistema_parque_fam_linares
         private void label1_MouseDown(object sender, MouseEventArgs e)
         {
             EventMouseDown();
+        }
+
+        private void btnGenerarTicket_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenerateBacode(string _data, string _filename)
+        {
+            GeneratedBarcode MyBarCode = IronBarCode.BarcodeWriter.CreateBarcode("0123456789", BarcodeWriterEncoding.Code128);
+            MyBarCode.SaveAsPng("MyBarCode.png");
+            // This line opens the image in your default image viewer
+            System.Diagnostics.Process.Start("MyBarCode.png");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

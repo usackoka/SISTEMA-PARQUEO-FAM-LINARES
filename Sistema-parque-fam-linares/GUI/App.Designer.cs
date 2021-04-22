@@ -29,6 +29,7 @@ namespace Sistema_parque_fam_linares
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -40,7 +41,9 @@ namespace Sistema_parque_fam_linares
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelMaster = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnGenerarTicket = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -168,6 +171,7 @@ namespace Sistema_parque_fam_linares
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DimGray;
+            this.panel5.Controls.Add(this.btnGenerarTicket);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
@@ -175,19 +179,39 @@ namespace Sistema_parque_fam_linares
             this.panel5.Size = new System.Drawing.Size(894, 82);
             this.panel5.TabIndex = 0;
             // 
+            // btnGenerarTicket
+            // 
+            this.btnGenerarTicket.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnGenerarTicket.FlatAppearance.BorderSize = 0;
+            this.btnGenerarTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarTicket.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarTicket.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnGenerarTicket.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerarTicket.Image")));
+            this.btnGenerarTicket.Location = new System.Drawing.Point(0, 0);
+            this.btnGenerarTicket.Name = "btnGenerarTicket";
+            this.btnGenerarTicket.Size = new System.Drawing.Size(71, 82);
+            this.btnGenerarTicket.TabIndex = 3;
+            this.btnGenerarTicket.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGenerarTicket.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolTip1.SetToolTip(this.btnGenerarTicket, "Generar ticket");
+            this.btnGenerarTicket.UseVisualStyleBackColor = true;
+            this.btnGenerarTicket.Click += new System.EventHandler(this.btnGenerarTicket_Click);
+            // 
             // button3
             // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.AliceBlue;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(820, 3);
+            this.button3.Location = new System.Drawing.Point(823, 0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 76);
+            this.button3.Size = new System.Drawing.Size(71, 82);
             this.button3.TabIndex = 2;
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolTip1.SetToolTip(this.button3, "Salir");
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -205,6 +229,7 @@ namespace Sistema_parque_fam_linares
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
@@ -230,6 +255,8 @@ namespace Sistema_parque_fam_linares
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panelMaster;
+        private System.Windows.Forms.Button btnGenerarTicket;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
