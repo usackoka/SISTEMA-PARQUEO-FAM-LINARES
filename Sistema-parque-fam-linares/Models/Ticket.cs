@@ -11,6 +11,7 @@ namespace Sistema_parque_fam_linares.Models
 {
     public class Ticket
     {
+        public int id { get; set; }
         public DateTime fechaIngreso { get; set; }
         public DateTime fechaEgreso { get; set; }
         public string placa { get; set; }
@@ -35,6 +36,25 @@ namespace Sistema_parque_fam_linares.Models
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error al guardar el ticket, inténtelo de nuevo.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void update() {
+            try
+            {
+                MySqlCommand ejecutarSQL = new MySqlCommand();
+                ejecutarSQL.Connection = ConexionMySQL.AbrirBD();
+
+                string sql = "update ticket set fechaEgreso=@fechaEgreso, cobroTotal=@cobroTotal where id=@id";
+                ejecutarSQL.CommandText = sql;
+                ejecutarSQL.Parameters.AddWithValue("@fechaEgreso", fechaEgreso);
+                ejecutarSQL.Parameters.AddWithValue("@cobroTotal", cobroTotal);
+                ejecutarSQL.Parameters.AddWithValue("@id", id);
+                MySqlDataReader registros = ejecutarSQL.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error al finalizar el ticket, inténtelo de nuevo.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -67,6 +87,7 @@ namespace Sistema_parque_fam_linares.Models
                     ticket.placa = result.GetString(0);
                     ticket.fechaIngreso = result.GetDateTime(1);
                     ticket.idTipoVehiculo = result.GetInt32(2);
+                    ticket.id = idTicket;
                 }
 
                 return ticket;

@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using Sistema_parque_fam_linares.DB;
 using Sistema_parque_fam_linares.Models;
+using Sistema_parque_fam_linares.Modulos.reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -81,13 +82,22 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                 ticket.guardarTicket();
             }
 
+            ReciboForm reciboForm = new ReciboForm();
+            reciboForm.Show();
+
             MessageBox.Show("Ticket guardado con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.txtPlaca.Text = "";
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Ticket ticket = Ticket.getTicketById(txtIdTicket.Text);
+            ticket.fechaEgreso = DateTime.Now;
+            ticket.cobroTotal = Convert.ToDouble(txtMontoTotal.Text);
+            ticket.update();
+            MessageBox.Show("Salida registrada con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void txtIdTicket_TextChanged(object sender, EventArgs e)
@@ -99,7 +109,7 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             lblTiempoTranscurrido.Text = "Tiempo: ";
             DateTime result = DateTime.Now - new TimeSpan(0, ticket.fechaIngreso.Hour, ticket.fechaIngreso.Minute, ticket.fechaIngreso.Second);
             //se calcula el tiempo que estuvo
-            if (ticket.placa != "") {
+            if (ticket.placa != "" && ticket.placa != null) {
                 lblTiempoTranscurrido.Text = "Tiempo: " + result.Hour.ToString() + ":" + result.Minute.ToString() + ":" + result.Second.ToString();
             }
 
