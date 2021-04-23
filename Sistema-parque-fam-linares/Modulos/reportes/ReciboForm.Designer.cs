@@ -41,16 +41,15 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = "D:\\Users\\oscar\\Documents\\GitHub\\SISTEMA-PARQUEO-FAM-LINARES\\Sistema-parque-fam-li" +
     "nares\\Modulos\\reportes\\CrystalReportRecibo.rpt";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(856, 490);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1029, 604);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.ParameterPanel;
-            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // ReciboForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 548);
+            this.ClientSize = new System.Drawing.Size(1047, 659);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "ReciboForm";
             this.Text = "ReciboForm";
