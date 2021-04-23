@@ -98,6 +98,12 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             ticket.cobroTotal = Convert.ToDouble(txtMontoTotal.Text);
             ticket.update();
             MessageBox.Show("Salida registrada con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            lblPlaca.Text = "Placa:";
+            lblTiempoTranscurrido.Text = "Tiempo: ";
+            lblTipoVehiculo.Text = "Tipo vehículo: ";
+            txtMontoTotal.Text = "";
+
         }
 
         private void txtIdTicket_TextChanged(object sender, EventArgs e)
@@ -106,15 +112,17 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             lblPlaca.Text = "Placa: " + ticket.placa;
             lblTipoVehiculo.Text = "Tipo vehículo: " + ticket.getTipoVehiculo().nombre;
 
+            //se calcula el tiempo que estuvo
             lblTiempoTranscurrido.Text = "Tiempo: ";
             DateTime result = DateTime.Now - new TimeSpan(0, ticket.fechaIngreso.Hour, ticket.fechaIngreso.Minute, ticket.fechaIngreso.Second);
-            //se calcula el tiempo que estuvo
+            txtMontoTotal.Text = "";
+  
             if (ticket.placa != "" && ticket.placa != null) {
                 lblTiempoTranscurrido.Text = "Tiempo: " + result.Hour.ToString() + ":" + result.Minute.ToString() + ":" + result.Second.ToString();
+                //monto a cobrar
+                txtMontoTotal.Text = (result.Hour * ticket.getTipoVehiculo().costoPorHora).ToString();
             }
 
-            //monto a cobrar
-            txtMontoTotal.Text = (result.Hour * ticket.getTipoVehiculo().costoPorHora).ToString();
         }
 
         private void txtIdTicket_MouseClick(object sender, MouseEventArgs e)

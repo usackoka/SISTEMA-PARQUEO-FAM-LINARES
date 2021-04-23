@@ -23,6 +23,7 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
 
         private void ReciboForm_Load(object sender, EventArgs e)
         {
+            /*
             crystal.Load(@"D:\Users\oscar\Documents\GitHub\SISTEMA-PARQUEO-FAM-LINARES\Sistema-parque-fam-linares\Modulos\reportes\CrystalReportRecibo.rpt");
             string sql = "select * from ticket where id=3";
             MySqlDataAdapter da = new MySqlDataAdapter(sql, ConexionMySQL.AbrirBD());
@@ -30,6 +31,7 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             da.Fill(ds, "Tickets");
             crystal.SetDataSource(ds);
             crystalReportViewer1.ReportSource = crystal;
+            */
         }
     }
 }
