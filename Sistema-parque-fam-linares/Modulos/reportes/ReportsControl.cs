@@ -64,6 +64,9 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
                         xcelApp.Cells[i + 2, j + 1] = value!=null?value.ToString():"";
                     }
                 }
+
+                xcelApp.Cells[dataGridView1.Rows.Count + 3, 2] = "TOTAL DE VENTAS";
+                xcelApp.Cells[dataGridView1.Rows.Count + 3, 5] = "SUMA(E2:E"+ (dataGridView1.Rows.Count).ToString() + ")";
                 xcelApp.Columns.AutoFit();
                 xcelApp.Visible = true;
             }
