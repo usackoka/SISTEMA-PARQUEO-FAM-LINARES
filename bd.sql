@@ -42,5 +42,14 @@ select
 from
     ticket
 where
-    MONTH(fechaEgreso) = MONTH(CURRENT_DATE())
-    AND YEAR(fechaEgreso) = YEAR(CURRENT_DATE());
+    MONTH(fechaEgreso) = MONTH(CURRENT_DATE)
+    AND YEAR(fechaEgreso) = YEAR(CURRENT_DATE);
+
+select
+    *
+from
+    ticket
+where
+    DAY(fechaEgreso) = DAY(CURRENT_DATE)
+    AND MONTH(fechaEgreso) = MONTH(CURRENT_DATE)
+    AND YEAR(fechaEgreso) = YEAR(CURRENT_DATE);

@@ -68,5 +68,57 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
                 xcelApp.Visible = true;
             }
         }
+
+        private void fillBy1ToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.ticketTableAdapter.FillBy1(this.parqueofaustinoDataSet.ticket);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBy2ToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.ticketTableAdapter.FillBy2(this.parqueofaustinoDataSet.ticket);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void ventas_totales_mes_actualToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.ticketTableAdapter.ventas_totales_mes_actual(this.parqueofaustinoDataSet.ticket);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void total_dia_actualToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.ticketTableAdapter.total_dia_actual(this.parqueofaustinoDataSet.ticket);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

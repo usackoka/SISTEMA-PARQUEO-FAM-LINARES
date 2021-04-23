@@ -78,7 +78,7 @@
               <Mapping SourceColumn="idTipoVehiculo" DataSetColumn="idTipoVehiculo" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Buscar_activos" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="Buscar_activos" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="Buscar_activos">
+              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Buscar_activos" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="Buscar_activos" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Buscar_activos">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>select * from ticket where fechaEgreso is null</CommandText>
@@ -86,10 +86,63 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>select * from ticket</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT
+    *
+FROM
+    ticket</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>select
+    *
+from
+    ticket
+where
+    id = 8</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="total_dia_actual" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="total_dia_actual" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="total_dia_actual">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>select
+    *
+from
+    ticket
+where
+    DAY(fechaEgreso) = DAY(CURRENT_DATE)
+    AND MONTH(fechaEgreso) = MONTH(CURRENT_DATE)
+    AND YEAR(fechaEgreso) = YEAR(CURRENT_DATE)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="parqueofaustinoConnectionString (Settings)" DbObjectName="parqueofaustino.ticket" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="ventas_totales_mes_actual" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="ventas_totales_mes_actual" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="ventas_totales_mes_actual">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>select
+    *
+from
+    ticket
+where
+    MONTH(fechaEgreso) = MONTH(CURRENT_DATE)
+    AND YEAR(fechaEgreso) = YEAR(CURRENT_DATE)</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -104,7 +157,7 @@
   <xs:element name="parqueofaustinoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="parqueofaustinoDataSet" msprop:Generator_UserDSName="parqueofaustinoDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ticket" msprop:Generator_TableClassName="ticketDataTable" msprop:Generator_TableVarName="tableticket" msprop:Generator_TablePropName="ticket" msprop:Generator_RowDeletingName="ticketRowDeleting" msprop:Generator_RowChangingName="ticketRowChanging" msprop:Generator_RowEvHandlerName="ticketRowChangeEventHandler" msprop:Generator_RowDeletedName="ticketRowDeleted" msprop:Generator_UserTableName="ticket" msprop:Generator_RowChangedName="ticketRowChanged" msprop:Generator_RowEvArgName="ticketRowChangeEvent" msprop:Generator_RowClassName="ticketRow">
+        <xs:element name="ticket" msprop:Generator_TableClassName="ticketDataTable" msprop:Generator_TableVarName="tableticket" msprop:Generator_RowChangedName="ticketRowChanged" msprop:Generator_TablePropName="ticket" msprop:Generator_RowDeletingName="ticketRowDeleting" msprop:Generator_RowChangingName="ticketRowChanging" msprop:Generator_RowEvHandlerName="ticketRowChangeEventHandler" msprop:Generator_RowDeletedName="ticketRowDeleted" msprop:Generator_RowClassName="ticketRow" msprop:Generator_UserTableName="ticket" msprop:Generator_RowEvArgName="ticketRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />

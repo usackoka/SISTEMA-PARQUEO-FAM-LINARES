@@ -30,13 +30,14 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.buscar_activosToolStrip = new System.Windows.Forms.ToolStrip();
+            this.buscar_activosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ventas_totales_mes_actualToolStrip = new System.Windows.Forms.ToolStrip();
+            this.ventas_totales_mes_actualToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaIngresoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaEgresoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,51 +47,16 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             this.ticketBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.parqueofaustinoDataSet = new Sistema_parque_fam_linares.parqueofaustinoDataSet();
             this.ticketTableAdapter = new Sistema_parque_fam_linares.parqueofaustinoDataSetTableAdapters.ticketTableAdapter();
-            this.buscar_activosToolStrip = new System.Windows.Forms.ToolStrip();
-            this.buscar_activosToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.total_dia_actualToolStrip = new System.Windows.Forms.ToolStrip();
+            this.total_dia_actualToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.fillByToolStrip.SuspendLayout();
+            this.buscar_activosToolStrip.SuspendLayout();
+            this.ventas_totales_mes_actualToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ticketBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parqueofaustinoDataSet)).BeginInit();
-            this.buscar_activosToolStrip.SuspendLayout();
+            this.total_dia_actualToolStrip.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.Location = new System.Drawing.Point(58, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 52);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Desde";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.Location = new System.Drawing.Point(367, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 52);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Hasta";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.dateTimePicker1.Location = new System.Drawing.Point(67, 81);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(294, 56);
-            this.dateTimePicker1.TabIndex = 5;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.dateTimePicker2.Location = new System.Drawing.Point(376, 81);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(275, 56);
-            this.dateTimePicker2.TabIndex = 6;
             // 
             // dataGridView1
             // 
@@ -104,11 +70,11 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             this.cobroTotalDataGridViewTextBoxColumn,
             this.idTipoVehiculoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ticketBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(67, 159);
+            this.dataGridView1.Location = new System.Drawing.Point(67, 79);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 255);
+            this.dataGridView1.Size = new System.Drawing.Size(584, 335);
             this.dataGridView1.TabIndex = 7;
             // 
             // fillByToolStrip
@@ -117,9 +83,9 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillByToolStrip.Location = new System.Drawing.Point(19, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(111, 27);
+            this.fillByToolStrip.Size = new System.Drawing.Size(150, 27);
             this.fillByToolStrip.TabIndex = 8;
             this.fillByToolStrip.Text = "fillByToolStrip";
             // 
@@ -127,9 +93,60 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             // 
             this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(98, 24);
+            this.fillByToolStripButton.Size = new System.Drawing.Size(98, 28);
             this.fillByToolStripButton.Text = "Buscar todos";
             this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            // 
+            // buscar_activosToolStrip
+            // 
+            this.buscar_activosToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.buscar_activosToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.buscar_activosToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buscar_activosToolStripButton});
+            this.buscar_activosToolStrip.Location = new System.Drawing.Point(102, 0);
+            this.buscar_activosToolStrip.Name = "buscar_activosToolStrip";
+            this.buscar_activosToolStrip.Size = new System.Drawing.Size(119, 27);
+            this.buscar_activosToolStrip.TabIndex = 9;
+            this.buscar_activosToolStrip.Text = "buscar_activosToolStrip";
+            // 
+            // buscar_activosToolStripButton
+            // 
+            this.buscar_activosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.buscar_activosToolStripButton.Name = "buscar_activosToolStripButton";
+            this.buscar_activosToolStripButton.Size = new System.Drawing.Size(106, 28);
+            this.buscar_activosToolStripButton.Text = "Buscar activos";
+            this.buscar_activosToolStripButton.Click += new System.EventHandler(this.buscar_activosToolStripButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button1.Location = new System.Drawing.Point(67, 420);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 42);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Exportar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ventas_totales_mes_actualToolStrip
+            // 
+            this.ventas_totales_mes_actualToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.ventas_totales_mes_actualToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ventas_totales_mes_actualToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ventas_totales_mes_actualToolStripButton});
+            this.ventas_totales_mes_actualToolStrip.Location = new System.Drawing.Point(19, 31);
+            this.ventas_totales_mes_actualToolStrip.Name = "ventas_totales_mes_actualToolStrip";
+            this.ventas_totales_mes_actualToolStrip.Size = new System.Drawing.Size(134, 27);
+            this.ventas_totales_mes_actualToolStrip.TabIndex = 11;
+            this.ventas_totales_mes_actualToolStrip.Text = "ventas_totales_mes_actualToolStrip";
+            // 
+            // ventas_totales_mes_actualToolStripButton
+            // 
+            this.ventas_totales_mes_actualToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ventas_totales_mes_actualToolStripButton.Name = "ventas_totales_mes_actualToolStripButton";
+            this.ventas_totales_mes_actualToolStripButton.Size = new System.Drawing.Size(121, 24);
+            this.ventas_totales_mes_actualToolStripButton.Text = "Total mes actual";
+            this.ventas_totales_mes_actualToolStripButton.Click += new System.EventHandler(this.ventas_totales_mes_actualToolStripButton_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -193,70 +210,56 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             // 
             this.ticketTableAdapter.ClearBeforeFill = true;
             // 
-            // buscar_activosToolStrip
+            // total_dia_actualToolStrip
             // 
-            this.buscar_activosToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.buscar_activosToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.buscar_activosToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buscar_activosToolStripButton});
-            this.buscar_activosToolStrip.Location = new System.Drawing.Point(83, 0);
-            this.buscar_activosToolStrip.Name = "buscar_activosToolStrip";
-            this.buscar_activosToolStrip.Size = new System.Drawing.Size(119, 27);
-            this.buscar_activosToolStrip.TabIndex = 9;
-            this.buscar_activosToolStrip.Text = "buscar_activosToolStrip";
+            this.total_dia_actualToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.total_dia_actualToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.total_dia_actualToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.total_dia_actualToolStripButton});
+            this.total_dia_actualToolStrip.Location = new System.Drawing.Point(115, 31);
+            this.total_dia_actualToolStrip.Name = "total_dia_actualToolStrip";
+            this.total_dia_actualToolStrip.Size = new System.Drawing.Size(167, 27);
+            this.total_dia_actualToolStrip.TabIndex = 12;
+            this.total_dia_actualToolStrip.Text = "total_dia_actualToolStrip";
             // 
-            // buscar_activosToolStripButton
+            // total_dia_actualToolStripButton
             // 
-            this.buscar_activosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.buscar_activosToolStripButton.Name = "buscar_activosToolStripButton";
-            this.buscar_activosToolStripButton.Size = new System.Drawing.Size(106, 24);
-            this.buscar_activosToolStripButton.Text = "Buscar activos";
-            this.buscar_activosToolStripButton.Click += new System.EventHandler(this.buscar_activosToolStripButton_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.Location = new System.Drawing.Point(67, 420);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 42);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Exportar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.total_dia_actualToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.total_dia_actualToolStripButton.Name = "total_dia_actualToolStripButton";
+            this.total_dia_actualToolStripButton.Size = new System.Drawing.Size(115, 24);
+            this.total_dia_actualToolStripButton.Text = "Total día actual";
+            this.total_dia_actualToolStripButton.Click += new System.EventHandler(this.total_dia_actualToolStripButton_Click);
             // 
             // ReportsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
+            this.Controls.Add(this.total_dia_actualToolStrip);
+            this.Controls.Add(this.ventas_totales_mes_actualToolStrip);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buscar_activosToolStrip);
             this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
             this.Name = "ReportsControl";
             this.Size = new System.Drawing.Size(715, 502);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.fillByToolStrip.ResumeLayout(false);
             this.fillByToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parqueofaustinoDataSet)).EndInit();
             this.buscar_activosToolStrip.ResumeLayout(false);
             this.buscar_activosToolStrip.PerformLayout();
+            this.ventas_totales_mes_actualToolStrip.ResumeLayout(false);
+            this.ventas_totales_mes_actualToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parqueofaustinoDataSet)).EndInit();
+            this.total_dia_actualToolStrip.ResumeLayout(false);
+            this.total_dia_actualToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource ticketBindingSource1;
         private parqueofaustinoDataSet parqueofaustinoDataSet;
@@ -272,5 +275,9 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
         private System.Windows.Forms.ToolStrip buscar_activosToolStrip;
         private System.Windows.Forms.ToolStripButton buscar_activosToolStripButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStrip ventas_totales_mes_actualToolStrip;
+        private System.Windows.Forms.ToolStripButton ventas_totales_mes_actualToolStripButton;
+        private System.Windows.Forms.ToolStrip total_dia_actualToolStrip;
+        private System.Windows.Forms.ToolStripButton total_dia_actualToolStripButton;
     }
 }
