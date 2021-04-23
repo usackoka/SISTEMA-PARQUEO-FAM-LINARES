@@ -35,3 +35,12 @@ insert into tipoVehiculo(nombre, costoPorHora, costoPorDia, costoPorMes)
 
 insert into tipoVehiculo(nombre, costoPorHora, costoPorDia, costoPorMes)
     values ('Camioneta', 15, 70, 390);
+
+
+select
+    *
+from
+    ticket
+where
+    MONTH(fechaEgreso) = MONTH(CURRENT_DATE())
+    AND YEAR(fechaEgreso) = YEAR(CURRENT_DATE());
