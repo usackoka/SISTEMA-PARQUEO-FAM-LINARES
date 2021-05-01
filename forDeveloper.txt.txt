@@ -1,3 +1,4 @@
 Instalar nuget de Mongo
 * Herramientas -> Administrador de paquetes NuGet -> Consola del Administrador de paquetes
 * Install-Package MongoDB.Driver
+

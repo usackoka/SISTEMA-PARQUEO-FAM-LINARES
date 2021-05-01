@@ -52,6 +52,7 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             this.ClientSize = new System.Drawing.Size(1047, 659);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "ReciboForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReciboForm";
             this.Load += new System.EventHandler(this.ReciboForm_Load);
             this.ResumeLayout(false);
