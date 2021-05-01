@@ -21,21 +21,19 @@ namespace Sistema_parque_fam_linares.Models
 
         public void guardarTicket()
         {
-            try
-            {
-                MySqlCommand ejecutarSQL = new MySqlCommand();
-                ejecutarSQL.Connection = ConexionMySQL.AbrirBD();
+            MySqlCommand ejecutarSQL = new MySqlCommand();
+            ejecutarSQL.Connection = ConexionMySQL.AbrirBD();
 
-                string sql = "Insert into ticket (fechaIngreso,placa,idTipoVehiculo) values (@fechaIngreso,@placa,@idTipoVehiculo)";
-                ejecutarSQL.CommandText = sql;
-                ejecutarSQL.Parameters.AddWithValue("@placa", placa);
-                ejecutarSQL.Parameters.AddWithValue("@fechaIngreso", fechaIngreso);
-                ejecutarSQL.Parameters.AddWithValue("@idTipoVehiculo", idTipoVehiculo);
-                MySqlDataReader registros = ejecutarSQL.ExecuteReader();
-            }
-            catch (Exception ex)
+            string sql = "Insert into ticket (fechaIngreso,placa,idTipoVehiculo) values (@fechaIngreso,@placa,@idTipoVehiculo); SELECT LAST_INSERT_ID();";
+            ejecutarSQL.CommandText = sql;
+            ejecutarSQL.Parameters.AddWithValue("@placa", placa);
+            ejecutarSQL.Parameters.AddWithValue("@fechaIngreso", fechaIngreso);
+            ejecutarSQL.Parameters.AddWithValue("@idTipoVehiculo", idTipoVehiculo);
+            MySqlDataReader reader = ejecutarSQL.ExecuteReader();
+
+            while (reader.Read())
             {
-                MessageBox.Show("Ocurrió un error al guardar el ticket, inténtelo de nuevo.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.id = reader.GetInt32(0);
             }
         }
 

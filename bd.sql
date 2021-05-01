@@ -17,7 +17,7 @@ create table ticket (
     id int NOT NULL AUTO_INCREMENT,
     fechaIngreso datetime not null,
     fechaEgreso datetime,
-    placa varchar(10),
+    placa varchar(15),
     cobroTotal Decimal(5, 2),
     idTipoVehiculo int,
     PRIMARY KEY (id),
@@ -47,3 +47,17 @@ where
     DAY(fechaEgreso) = DAY(CURRENT_DATE)
     AND MONTH(fechaEgreso) = MONTH(CURRENT_DATE)
     AND YEAR(fechaEgreso) = YEAR(CURRENT_DATE);
+
+    /*
+ESTE VEHÍCULO HA SIDO RECIBIDO BAJO LAS SIGUIENTES CONDICIONES
+
+1) El vehículo se estaciona por cuenta y riesgo del propietario
+
+2) Si el cliente extravía el ticket, deberá demostrar fehacientemente cual es su vehículo para poder retirarlo.
+
+3) La empresa no se responsabiliza por daños causados a propiedad de terceras personas cuando estos sean producidos en circunstancias ajenas a este establecimiento.
+
+4) Favor NO DEJAR objetos de valor dentro del vehículo.
+
+5) Por extravío de ticket se cobrará Q25.00
+    */

@@ -79,16 +79,22 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                 ticket.fechaIngreso = DateTime.Now;
                 ticket.placa = txtPlaca.Text;
                 ticket.idTipoVehiculo = Convert.ToInt32(comboTipoVehiculo.SelectedValue.ToString());
-                ticket.guardarTicket();
+                try
+                {
+                    ticket.guardarTicket();
+
+                    ReciboForm reciboForm = new ReciboForm(ticket.placa, ticket.fechaIngreso, ticket.id.ToString());
+                    reciboForm.Show();
+
+                    MessageBox.Show("Ticket guardado con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.txtPlaca.Text = "";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocurrió un error al guardar el ticket, inténtelo de nuevo. Error: "+ex.Message, "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
-
-            ReciboForm reciboForm = new ReciboForm();
-            reciboForm.Show();
-
-            MessageBox.Show("Ticket guardado con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.txtPlaca.Text = "";
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
