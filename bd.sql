@@ -9,7 +9,7 @@ create table tipoVehiculo (
     nombre varchar(100),
     costoPorHora Decimal(5,2),
     costoPorDia Decimal(5,2),
-    costoPorMes Decimal(5,2)
+    costoPorMes Decimal(5,2),
     PRIMARY KEY (id)
 );
 
@@ -25,16 +25,10 @@ create table ticket (
 );
 
 insert into tipoVehiculo(nombre, costoPorHora, costoPorDia, costoPorMes)
-    values ('Motocicleta', 5, 30, 200);
+    values ('Motocicleta', 10, 30, 200);
 
 insert into tipoVehiculo(nombre, costoPorHora, costoPorDia, costoPorMes)
-    values ('Carro tipo C', 10, 50, 300);
-
-insert into tipoVehiculo(nombre, costoPorHora, costoPorDia, costoPorMes)
-    values ('Carro tipo B', 12.50, 60, 360);
-
-insert into tipoVehiculo(nombre, costoPorHora, costoPorDia, costoPorMes)
-    values ('Camioneta', 15, 70, 390);
+    values ('Vehículo', 10, 30, 200);
 
 
 select
