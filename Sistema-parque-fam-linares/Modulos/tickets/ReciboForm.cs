@@ -37,6 +37,7 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
                 crystal.Load(reportPath);
                 TextObject txtObj = (TextObject)crystal.ReportDefinition.Sections["Section2"].ReportObjects["id"];
                 TextObject txtObj2 = (TextObject)crystal.ReportDefinition.Sections["Section3"].ReportObjects["txtPlacaFecha"];
+                // txtObj.Text = "11245783698741";
                 txtObj.Text = this.idTicket;
                 txtObj2.Text = "Placa: " + this.placa + "\n" + "Ingreso: " + this.fechaIngreso.ToString();
                 /*

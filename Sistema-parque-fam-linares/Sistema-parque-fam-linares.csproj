@@ -146,10 +146,10 @@
       <DependentUpon>CrystalReportRecibo.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Modulos\reportes\ReciboForm.cs">
+    <Compile Include="Modulos\tickets\ReciboForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\reportes\ReciboForm.Designer.cs">
+    <Compile Include="Modulos\tickets\ReciboForm.Designer.cs">
       <DependentUpon>ReciboForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\reportes\ReportsControl.cs">
@@ -178,7 +178,7 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportRecibo.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\reportes\ReciboForm.resx">
+    <EmbeddedResource Include="Modulos\tickets\ReciboForm.resx">
       <DependentUpon>ReciboForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\reportes\ReportsControl.resx">

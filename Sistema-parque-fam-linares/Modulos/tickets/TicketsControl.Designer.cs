@@ -51,36 +51,36 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtPlaca.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlaca.Location = new System.Drawing.Point(58, 243);
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(270, 56);
+            this.txtPlaca.Size = new System.Drawing.Size(270, 57);
             this.txtPlaca.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(58, 206);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 52);
+            this.label1.Size = new System.Drawing.Size(146, 65);
             this.label1.TabIndex = 1;
             this.label1.Text = "Placa";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(49, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 52);
+            this.label2.Size = new System.Drawing.Size(319, 65);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tipo vehículo";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // comboTipoVehiculo
             // 
-            this.comboTipoVehiculo.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.comboTipoVehiculo.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTipoVehiculo.FormattingEnabled = true;
             this.comboTipoVehiculo.Location = new System.Drawing.Point(58, 143);
             this.comboTipoVehiculo.Name = "comboTipoVehiculo";
@@ -94,26 +94,26 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblFecha.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.Location = new System.Drawing.Point(49, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(238, 52);
+            this.lblFecha.Size = new System.Drawing.Size(319, 65);
             this.lblFecha.TabIndex = 4;
             this.lblFecha.Text = "Tipo vehículo";
             // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblHora.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.Location = new System.Drawing.Point(188, 0);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(238, 52);
+            this.lblHora.Size = new System.Drawing.Size(319, 65);
             this.lblHora.TabIndex = 5;
             this.lblHora.Text = "Tipo vehículo";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(58, 350);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 81);
@@ -124,7 +124,7 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(382, 350);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 81);
@@ -136,49 +136,49 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(49, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 52);
+            this.label3.Size = new System.Drawing.Size(221, 65);
             this.label3.TabIndex = 8;
             this.label3.Text = "Entradas";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(373, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 52);
+            this.label4.Size = new System.Drawing.Size(186, 65);
             this.label4.TabIndex = 9;
             this.label4.Text = "Salidas";
             // 
             // lblTipoVehiculo
             // 
             this.lblTipoVehiculo.AutoSize = true;
-            this.lblTipoVehiculo.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblTipoVehiculo.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoVehiculo.Location = new System.Drawing.Point(373, 151);
             this.lblTipoVehiculo.Name = "lblTipoVehiculo";
-            this.lblTipoVehiculo.Size = new System.Drawing.Size(260, 52);
+            this.lblTipoVehiculo.Size = new System.Drawing.Size(346, 65);
             this.lblTipoVehiculo.TabIndex = 10;
             this.lblTipoVehiculo.Text = "Tipo vehículo: ";
             // 
             // lblPlaca
             // 
             this.lblPlaca.AutoSize = true;
-            this.lblPlaca.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblPlaca.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlaca.Location = new System.Drawing.Point(373, 190);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(134, 52);
+            this.lblPlaca.Size = new System.Drawing.Size(174, 65);
             this.lblPlaca.TabIndex = 11;
             this.lblPlaca.Text = "Placa: ";
             // 
             // txtIdTicket
             // 
-            this.txtIdTicket.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtIdTicket.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdTicket.Location = new System.Drawing.Point(382, 104);
             this.txtIdTicket.Name = "txtIdTicket";
-            this.txtIdTicket.Size = new System.Drawing.Size(251, 56);
+            this.txtIdTicket.Size = new System.Drawing.Size(314, 71);
             this.txtIdTicket.TabIndex = 12;
             this.txtIdTicket.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtIdTicket_MouseClick);
             this.txtIdTicket.TextChanged += new System.EventHandler(this.txtIdTicket_TextChanged);
@@ -186,28 +186,28 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label5.Location = new System.Drawing.Point(381, 258);
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(373, 255);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(271, 52);
+            this.label5.Size = new System.Drawing.Size(283, 52);
             this.label5.TabIndex = 14;
             this.label5.Text = "Monto a cobrar";
             // 
             // txtMontoTotal
             // 
-            this.txtMontoTotal.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.txtMontoTotal.Location = new System.Drawing.Point(382, 291);
+            this.txtMontoTotal.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMontoTotal.Location = new System.Drawing.Point(382, 287);
             this.txtMontoTotal.Name = "txtMontoTotal";
-            this.txtMontoTotal.Size = new System.Drawing.Size(270, 56);
+            this.txtMontoTotal.Size = new System.Drawing.Size(314, 57);
             this.txtMontoTotal.TabIndex = 13;
             // 
             // lblTiempoTranscurrido
             // 
             this.lblTiempoTranscurrido.AutoSize = true;
-            this.lblTiempoTranscurrido.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblTiempoTranscurrido.Location = new System.Drawing.Point(373, 225);
+            this.lblTiempoTranscurrido.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTiempoTranscurrido.Location = new System.Drawing.Point(373, 219);
             this.lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
-            this.lblTiempoTranscurrido.Size = new System.Drawing.Size(161, 52);
+            this.lblTiempoTranscurrido.Size = new System.Drawing.Size(173, 52);
             this.lblTiempoTranscurrido.TabIndex = 15;
             this.lblTiempoTranscurrido.Text = "Tiempo: ";
             // 
@@ -215,7 +215,7 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.Controls.Add(this.txtIdTicket);
             this.Controls.Add(this.lblPlaca);
             this.Controls.Add(this.lblTipoVehiculo);

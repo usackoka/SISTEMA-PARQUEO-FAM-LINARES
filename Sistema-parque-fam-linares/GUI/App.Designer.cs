@@ -68,7 +68,7 @@ namespace Sistema_parque_fam_linares
             this.btnReportes.FlatAppearance.BorderSize = 0;
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnReportes.ForeColor = System.Drawing.Color.Black;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.Location = new System.Drawing.Point(0, 512);
             this.btnReportes.Name = "btnReportes";
@@ -85,7 +85,7 @@ namespace Sistema_parque_fam_linares
             this.btnUsers.FlatAppearance.BorderSize = 0;
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsers.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnUsers.ForeColor = System.Drawing.Color.Black;
             this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
             this.btnUsers.Location = new System.Drawing.Point(0, 339);
             this.btnUsers.Name = "btnUsers";
@@ -102,7 +102,7 @@ namespace Sistema_parque_fam_linares
             this.btnInicio.FlatAppearance.BorderSize = 0;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnInicio.ForeColor = System.Drawing.Color.Black;
             this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
             this.btnInicio.Location = new System.Drawing.Point(0, 166);
             this.btnInicio.Name = "btnInicio";
@@ -115,7 +115,7 @@ namespace Sistema_parque_fam_linares
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Khaki;
+            this.panel2.BackColor = System.Drawing.Color.SkyBlue;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -129,11 +129,11 @@ namespace Sistema_parque_fam_linares
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(9, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 104);
+            this.label1.Size = new System.Drawing.Size(341, 130);
             this.label1.TabIndex = 0;
             this.label1.Text = "Multiservicios \r\nFaustino";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
@@ -142,7 +142,7 @@ namespace Sistema_parque_fam_linares
             // 
             // statusPanel
             // 
-            this.statusPanel.BackColor = System.Drawing.Color.Khaki;
+            this.statusPanel.BackColor = System.Drawing.Color.SkyBlue;
             this.statusPanel.Location = new System.Drawing.Point(286, 186);
             this.statusPanel.Name = "statusPanel";
             this.statusPanel.Size = new System.Drawing.Size(15, 134);
@@ -160,7 +160,7 @@ namespace Sistema_parque_fam_linares
             // 
             // panelMaster
             // 
-            this.panelMaster.BackColor = System.Drawing.Color.DimGray;
+            this.panelMaster.BackColor = System.Drawing.Color.SkyBlue;
             this.panelMaster.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMaster.ForeColor = System.Drawing.Color.Black;
             this.panelMaster.Location = new System.Drawing.Point(0, 82);
@@ -170,7 +170,7 @@ namespace Sistema_parque_fam_linares
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.DimGray;
+            this.panel5.BackColor = System.Drawing.Color.SkyBlue;
             this.panel5.Controls.Add(this.btnGenerarTicket);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -218,7 +218,7 @@ namespace Sistema_parque_fam_linares
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1248, 760);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.statusPanel);
