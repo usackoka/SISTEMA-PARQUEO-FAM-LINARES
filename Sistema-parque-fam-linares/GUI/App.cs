@@ -117,7 +117,7 @@ namespace Sistema_parque_fam_linares
 
         private void btnGenerarTicket_Click(object sender, EventArgs e)
         {
-
+            refreshImpresoras();
         }
 
         private void GenerateBacode(string _data, string _filename)
@@ -130,7 +130,25 @@ namespace Sistema_parque_fam_linares
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            refreshImpresoras();
+        }
 
+        private void refreshImpresoras()
+        {
+            List<string> my_list = new List<string>();
+            foreach (string printer in System.Drawing.Printing.PrinterSettings.InstalledPrinters)
+            {
+                my_list.Add(printer);
+            }
+            comboImpresoras.DataSource = my_list;
+
+            comboImpresoras.SelectedItem = "Microsoft XPS Document Writer";
+            config.impresoraSeleccionada = comboImpresoras.SelectedItem.ToString();
+        }
+
+        private void comboImpresoras_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            config.impresoraSeleccionada = comboImpresoras.SelectedItem.ToString();
         }
     }
 }

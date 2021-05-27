@@ -141,6 +141,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="config.cs" />
     <Compile Include="DB\ConexionMySQL.cs" />
     <Compile Include="DB\MongoConfig.cs" />
     <Compile Include="GUI\App.cs">
@@ -152,18 +153,7 @@
     <Compile Include="Models\TipoVehiculo.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Ticket.cs" />
-    <Compile Include="Modulos\reportes\CrystalReportRecibo.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReportRecibo.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Modulos\tickets\ReciboForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modulos\tickets\ReciboForm.Designer.cs">
-      <DependentUpon>ReciboForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Modulos\reportes\clsFunciones.cs" />
     <Compile Include="Modulos\reportes\ReportsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -185,13 +175,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\App.resx">
       <DependentUpon>App.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\reportes\CrystalReportRecibo.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReportRecibo.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\tickets\ReciboForm.resx">
-      <DependentUpon>ReciboForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\reportes\ReportsControl.resx">
       <DependentUpon>ReportsControl.cs</DependentUpon>

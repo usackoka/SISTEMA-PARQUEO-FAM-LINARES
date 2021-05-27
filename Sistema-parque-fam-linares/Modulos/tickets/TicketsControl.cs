@@ -83,8 +83,33 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                 {
                     ticket.guardarTicket();
 
-                    ReciboForm reciboForm = new ReciboForm(ticket.placa, ticket.fechaIngreso, ticket.id.ToString());
-                    reciboForm.Show();
+                    clsFunciones.CreaTicket tk = new clsFunciones.CreaTicket();
+                    tk.TextoCentro("**********************************");
+                    tk.TextoIzquierda("Dirc: 7ma calle 9-69 Z.1, Guatemala C.A.");
+                    tk.TextoIzquierda("\n");
+                    tk.TextoCentro("Parqueo Multiservicios Faustino"); //imprime una linea de descripcion
+                    tk.TextoIzquierda("\n");
+                    tk.TextoIzquierda("No Ticket: " + ticket.id.ToString());
+                    tk.TextoIzquierda("Fecha: " + DateTime.Now.ToShortDateString() + " Hora: " + DateTime.Now.ToShortTimeString());
+                    tk.TextoIzquierda("Placa: " + ticket.placa);
+                    clsFunciones.CreaTicket.LineasGuion();
+                    tk.TextoCentro("ESTE VEHICULO HA SIDO RECIBIDO BAJO LAS SIGUIENTES CONDICIONES");
+                    tk.TextoIzquierda("1) El vehículo se estaciona por cuenta y riesgo del propietario.");
+                    tk.TextoIzquierda("\n");
+                    tk.TextoIzquierda("2) Si el cliente extravía el ticket, deberá demostrar fehacientemente cual es su vehículo para poder retirarlo.");
+                    tk.TextoIzquierda("\n");
+                    tk.TextoIzquierda("3) La empresa no se responsabiliza por daños causados a propiedad de terceras personas cuando estos sean producidos en circunstancias ajenas a este establecimiento.");
+                    tk.TextoIzquierda("\n");
+                    tk.TextoIzquierda("4) Favor NO DEJAR objetos de valor dentro del vehículo.");
+                    tk.TextoIzquierda("\n");
+                    tk.TextoIzquierda("5) Por extravío de ticket se cobrará");
+                    tk.TextoIzquierda("   Q25.00");
+                    clsFunciones.CreaTicket.LineasGuion();
+                    tk.TextoCentro("**********************************");
+                    tk.TextoCentro("*     Gracias por preferirnos    *");
+                    tk.TextoCentro("**********************************");
+                    tk.ImprimirTiket(config.impresoraSeleccionada);
+
 
                     MessageBox.Show("Ticket guardado con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.txtPlaca.Text = "";

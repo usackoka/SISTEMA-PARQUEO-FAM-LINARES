@@ -44,6 +44,7 @@ namespace Sistema_parque_fam_linares
             this.btnGenerarTicket = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.comboImpresoras = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -133,7 +134,7 @@ namespace Sistema_parque_fam_linares
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(9, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 130);
+            this.label1.Size = new System.Drawing.Size(272, 104);
             this.label1.TabIndex = 0;
             this.label1.Text = "Multiservicios \r\nFaustino";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
@@ -171,6 +172,7 @@ namespace Sistema_parque_fam_linares
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel5.Controls.Add(this.comboImpresoras);
             this.panel5.Controls.Add(this.btnGenerarTicket);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -215,6 +217,17 @@ namespace Sistema_parque_fam_linares
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // comboImpresoras
+            // 
+            this.comboImpresoras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboImpresoras.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboImpresoras.FormattingEnabled = true;
+            this.comboImpresoras.Location = new System.Drawing.Point(125, 16);
+            this.comboImpresoras.Name = "comboImpresoras";
+            this.comboImpresoras.Size = new System.Drawing.Size(370, 60);
+            this.comboImpresoras.TabIndex = 4;
+            this.comboImpresoras.SelectedIndexChanged += new System.EventHandler(this.comboImpresoras_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -257,6 +270,7 @@ namespace Sistema_parque_fam_linares
         private System.Windows.Forms.Panel panelMaster;
         private System.Windows.Forms.Button btnGenerarTicket;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ComboBox comboImpresoras;
     }
 }
 
