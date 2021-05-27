@@ -12,7 +12,7 @@ namespace Sistema_parque_fam_linares.DB
         static MySqlConnection con;
         public static MySqlConnection AbrirBD()
         {
-            con = new MySqlConnection("Server=localhost; Database=parqueoFaustino; Uid=root;Pwd=root;SslMode=none;");
+            con = new MySqlConnection("Server=localhost; Database=parqueoFaustino; Uid=root;Pwd=root;SslMode=Required; ;AllowPublicKeyRetrieval=true");
             try
             {
                 con.Open();
