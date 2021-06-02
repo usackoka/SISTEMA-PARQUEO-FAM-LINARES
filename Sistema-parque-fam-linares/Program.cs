@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MongoDB.Driver;
 using Sistema_parque_fam_linares.DB;
 using Sistema_parque_fam_linares.Models;
 
@@ -20,9 +19,6 @@ namespace Sistema_parque_fam_linares
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            MongoConfig.initialize();
-            Usuario user = new Usuario() { primerNombre = "Diana", segundoNombre = "Sofia", primerApellido = "Guzman", segundoApellido = "Mancilla" };
-            
         }
     }
 }
