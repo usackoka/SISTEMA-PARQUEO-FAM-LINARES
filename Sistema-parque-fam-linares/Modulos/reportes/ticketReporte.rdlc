@@ -319,10 +319,24 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
+                <Value>*</Value>
+                <Style>
+                  <FontFamily>IDAHC39M Code 39 Barcode</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
                 <Value>=Fields!id.Value</Value>
                 <Style>
-                  <FontFamily>Code 128</FontFamily>
-                  <FontSize>36pt</FontSize>
+                  <FontFamily>IDAHC39M Code 39 Barcode</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>*</Value>
+                <Style>
+                  <FontFamily>IDAHC39M Code 39 Barcode</FontFamily>
+                  <FontSize>12pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -337,9 +351,7 @@
         <Width>4.48966cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
+          <Border />
           <VerticalAlign>Middle</VerticalAlign>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>

@@ -50,15 +50,13 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             PageSettings pg = new PageSettings();
             pg.Margins.Top = 0;
             pg.Margins.Bottom = 0;
-            pg.Margins.Left = 5;
+            pg.Margins.Left = 15;
             pg.Margins.Right = 0;
-            /*
             PaperSize size = new PaperSize();
             size.RawKind = (int)PaperKind.Custom;
-            size.Width = 57;
-            size.Height = 150; 
+            size.Width = 300;
+            size.Height = 1000; 
             pg.PaperSize = size;
-            */
             reportViewer1.SetPageSettings(pg);
             this.reportViewer1.RefreshReport();
         }
