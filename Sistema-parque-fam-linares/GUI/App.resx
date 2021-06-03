@@ -186,22 +186,6 @@
         QmCC
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="btnGenerarTicket.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFhSURBVFhH7dex
-        SgNBFAXQV1jYJHWqEMg3CIE0Vn6DnRLB2jKllX0QrAWbFJYpLP0FWyv9CRUs1nvDmzBZrpklO8xaOHAg
-        3H0z75EsbNaqquqUDAlrCW+ZLFUP0qHZEPghp6HsJUOzUbTxBI73xL3hnJHsJcPtAQ5VTRPcG53zP8Af
-        HgBrArdw7x4hbHzwbB/cG87hmSFnr4n3tisIRaWxt71GQWnsLS+UJMO23uEGrt0KVB3JsK2LrTvd7AA+
-        /FqdDNt6gUs4d3eg6kiGJcmwJBmWJMOSZFiSDGO5Hka/sc9aULceAKsHp3CWwJpewwHYe/10UheDMMAi
-        ylIWDQdgbxsDH5XfoIrCAFN4gucE1kwTA7AXe47j36sPA3cEoTjXPcAzw/n9TU28YROKf0RYM/jybBfW
-        zHxPPEC7v2RY8yhLmfuefAN4zq+P13YZRPVZBujkxaTbVzPC6u7ltJzKfgAMfd/KXwZnnQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
   <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA

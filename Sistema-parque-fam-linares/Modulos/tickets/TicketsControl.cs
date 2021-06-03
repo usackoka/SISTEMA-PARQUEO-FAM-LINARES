@@ -109,7 +109,7 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                     report.Show();
 
 
-                    MessageBox.Show("Ticket guardado con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Ticket guardado con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.txtPlaca.Text = "";
                 }
                 catch (Exception ex)

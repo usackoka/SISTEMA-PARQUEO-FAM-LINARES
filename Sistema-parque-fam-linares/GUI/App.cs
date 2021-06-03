@@ -140,15 +140,10 @@ namespace Sistema_parque_fam_linares
             {
                 my_list.Add(printer);
             }
-            comboImpresoras.DataSource = my_list;
-
-            comboImpresoras.SelectedItem = "Microsoft XPS Document Writer";
-            config.impresoraSeleccionada = comboImpresoras.SelectedItem.ToString();
         }
 
         private void comboImpresoras_SelectedIndexChanged(object sender, EventArgs e)
         {
-            config.impresoraSeleccionada = comboImpresoras.SelectedItem.ToString();
         }
     }
 }

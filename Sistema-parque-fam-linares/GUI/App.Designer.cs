@@ -41,10 +41,8 @@ namespace Sistema_parque_fam_linares
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelMaster = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnGenerarTicket = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.comboImpresoras = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -172,32 +170,12 @@ namespace Sistema_parque_fam_linares
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel5.Controls.Add(this.comboImpresoras);
-            this.panel5.Controls.Add(this.btnGenerarTicket);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(894, 82);
             this.panel5.TabIndex = 0;
-            // 
-            // btnGenerarTicket
-            // 
-            this.btnGenerarTicket.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnGenerarTicket.FlatAppearance.BorderSize = 0;
-            this.btnGenerarTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerarTicket.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarTicket.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnGenerarTicket.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerarTicket.Image")));
-            this.btnGenerarTicket.Location = new System.Drawing.Point(0, 0);
-            this.btnGenerarTicket.Name = "btnGenerarTicket";
-            this.btnGenerarTicket.Size = new System.Drawing.Size(71, 82);
-            this.btnGenerarTicket.TabIndex = 3;
-            this.btnGenerarTicket.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGenerarTicket.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolTip1.SetToolTip(this.btnGenerarTicket, "Generar ticket");
-            this.btnGenerarTicket.UseVisualStyleBackColor = true;
-            this.btnGenerarTicket.Click += new System.EventHandler(this.btnGenerarTicket_Click);
             // 
             // button3
             // 
@@ -216,17 +194,6 @@ namespace Sistema_parque_fam_linares
             this.toolTip1.SetToolTip(this.button3, "Salir");
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // comboImpresoras
-            // 
-            this.comboImpresoras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboImpresoras.Font = new System.Drawing.Font("Arial Narrow", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboImpresoras.FormattingEnabled = true;
-            this.comboImpresoras.Location = new System.Drawing.Point(125, 16);
-            this.comboImpresoras.Name = "comboImpresoras";
-            this.comboImpresoras.Size = new System.Drawing.Size(370, 60);
-            this.comboImpresoras.TabIndex = 4;
-            this.comboImpresoras.SelectedIndexChanged += new System.EventHandler(this.comboImpresoras_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -268,9 +235,7 @@ namespace Sistema_parque_fam_linares
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panelMaster;
-        private System.Windows.Forms.Button btnGenerarTicket;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ComboBox comboImpresoras;
     }
 }
 
