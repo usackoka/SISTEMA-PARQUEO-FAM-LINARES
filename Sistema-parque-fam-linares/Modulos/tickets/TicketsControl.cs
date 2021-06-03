@@ -83,6 +83,7 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                 {
                     ticket.guardarTicket();
 
+                    /*
                     clsFunciones.CreaTicket tk = new clsFunciones.CreaTicket();
                     tk.TextoIzquierda("Dirc: 7ma calle 9-69 Z.1, Guatemala C.A.\n");
                     tk.TextoCentro("Parqueo Multiservicios Faustino\n");
@@ -100,6 +101,10 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                     clsFunciones.CreaTicket.LineasGuion();
                     tk.TextoCentro("Gracias por preferirnos");
                     tk.ImprimirTiket(config.impresoraSeleccionada);
+                    */
+
+                    ReportViewer report = new ReportViewer(ticket);
+                    report.Show();
 
 
                     MessageBox.Show("Ticket guardado con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
