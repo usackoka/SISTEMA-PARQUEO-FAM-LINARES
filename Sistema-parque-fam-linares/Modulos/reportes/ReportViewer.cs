@@ -5,6 +5,7 @@ using Microsoft.Reporting.WinForms;
 using Sistema_parque_fam_linares.Models;
 using System.Configuration;
 using System.IO;
+using System.Drawing.Printing;
 
 namespace Sistema_parque_fam_linares.Modulos.reportes
 {
@@ -27,7 +28,6 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
         private void Form1_Load1(object sender, EventArgs e)
         {
             CargarReporte();
-
         }
 
         /// <summary>
@@ -39,22 +39,27 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             List<Ticket> Agregar = new List<Ticket>();
             Agregar.Add(ticket);
 
-            //path del reporte
-            Uri file = new Uri(@"c:\reportes\ticketReporte.rdlc");
-            // Must end in a slash to indicate folder
-            Uri folder = new Uri(@"c:\reportes\");
-            string relativePath =
-            Uri.UnescapeDataString(
-                folder.MakeRelativeUri(file)
-                    .ToString()
-                    .Replace('/', Path.DirectorySeparatorChar)
-                );
 
             ///Mostrar datos en el reporte
-            this.reportViewer1.LocalReport.ReportPath = relativePath;
+            //this.reportViewer1.LocalReport.ReportPath = relativePath;
             ReportDataSource rds1 = new ReportDataSource("Tickets", Agregar);
             this.reportViewer1.LocalReport.DataSources.Clear();
             this.reportViewer1.LocalReport.DataSources.Add(rds1);
+            this.reportViewer1.RefreshReport();
+
+            PageSettings pg = new PageSettings();
+            pg.Margins.Top = 0;
+            pg.Margins.Bottom = 0;
+            pg.Margins.Left = 5;
+            pg.Margins.Right = 0;
+            /*
+            PaperSize size = new PaperSize();
+            size.RawKind = (int)PaperKind.Custom;
+            size.Width = 57;
+            size.Height = 150; 
+            pg.PaperSize = size;
+            */
+            reportViewer1.SetPageSettings(pg);
             this.reportViewer1.RefreshReport();
         }
     }

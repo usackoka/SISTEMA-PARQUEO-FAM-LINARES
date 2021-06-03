@@ -34,10 +34,13 @@ namespace Sistema_parque_fam_linares.Modulos.reportes
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(3, 1);
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_parque_fam_linares.Modulos.reportes.ticketReporte.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.PageCountMode = Microsoft.Reporting.WinForms.PageCountMode.Actual;
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(736, 722);
+            this.reportViewer1.Size = new System.Drawing.Size(746, 724);
             this.reportViewer1.TabIndex = 0;
             // 
             // ReportViewer

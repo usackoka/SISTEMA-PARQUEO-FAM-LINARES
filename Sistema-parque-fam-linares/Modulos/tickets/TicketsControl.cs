@@ -40,6 +40,8 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                 comboTipoVehiculo.DisplayMember = "nombre";
                 comboTipoVehiculo.ValueMember = "id";
                 comboTipoVehiculo.DataSource = ds.Tables["Tipos"];
+
+                comboTipoVehiculo.SelectedValue = 2;
             }
             catch (Exception ex)
             {
