@@ -82,7 +82,7 @@ namespace Sistema_parque_fam_linares.Models
 
                 while (result.Read())
                 {
-                    ticket.placa = result.GetString(0);
+                    ticket.placa = result.GetString(0) ?? "";
                     ticket.fechaIngreso = result.GetDateTime(1);
                     ticket.idTipoVehiculo = result.GetInt32(2);
                     ticket.id = idTicket;
