@@ -89,7 +89,7 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             ticket.fechaEgreso = DateTime.Now;
             ticket.cobroTotal = Convert.ToDouble(txtMontoTotal.Text);
             ticket.update();
-            MessageBox.Show("Salida registrada con éxito!.", "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Salida registrada con éxito, Total a pagar: Q"+ticket.cobroTotal, "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             lblPlaca.Text = "Placa:";
             lblTiempoTranscurrido.Text = "Tiempo: ";
@@ -114,7 +114,6 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             double fraccion = minutos > 5 ? (ticket.getTipoVehiculo().costoPorHora / 2) : 0;
             fraccion = minutos > 35 ? ticket.getTipoVehiculo().costoPorHora : fraccion;
             txtMontoTotal.Text = (result.Hour * ticket.getTipoVehiculo().costoPorHora + fraccion).ToString();
-
         }
 
         private void txtIdTicket_MouseClick(object sender, MouseEventArgs e)
