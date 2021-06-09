@@ -143,6 +143,12 @@
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Ticket.cs" />
     <Compile Include="Modulos\reportes\clsFunciones.cs" />
+    <Compile Include="Modulos\reportes\FormTotalPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\reportes\FormTotalPagar.Designer.cs">
+      <DependentUpon>FormTotalPagar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\reportes\ReportsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="GUI\App.resx">
       <DependentUpon>App.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\reportes\FormTotalPagar.resx">
+      <DependentUpon>FormTotalPagar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\reportes\ReportsControl.resx">
       <DependentUpon>ReportsControl.cs</DependentUpon>

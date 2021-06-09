@@ -89,7 +89,10 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             ticket.fechaEgreso = DateTime.Now;
             ticket.cobroTotal = Convert.ToDouble(txtMontoTotal.Text);
             ticket.update();
-            MessageBox.Show("Salida registrada con éxito, Total a pagar: Q"+ticket.cobroTotal, "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Salida registrada con éxito, Total a pagar: Q"+ticket.cobroTotal, "i", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            FormTotalPagar f = new FormTotalPagar(ticket.cobroTotal.ToString(), lblTiempoTranscurrido.Text);
+            f.Show();
 
             lblPlaca.Text = "Placa:";
             lblTiempoTranscurrido.Text = "Tiempo: ";
