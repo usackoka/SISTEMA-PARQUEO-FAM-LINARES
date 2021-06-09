@@ -111,8 +111,9 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
             lblTiempoTranscurrido.Text = "Tiempo: " + result.Hour.ToString() + ":" + result.Minute.ToString() + ":" + result.Second.ToString();
             //monto a cobrar
             int minutos = result.Minute;
-            double fraccion = minutos > 5 ? (ticket.getTipoVehiculo().costoPorHora / 2) : 0;
-            fraccion = minutos > 35 ? ticket.getTipoVehiculo().costoPorHora : fraccion;
+            double fraccion = minutos > 3 ? (ticket.getTipoVehiculo().costoPorHora / 2) : 0;
+            fraccion = minutos > 33 ? ticket.getTipoVehiculo().costoPorHora : fraccion;
+            fraccion = result.Hour == 0 && fraccion == 0 ? (ticket.getTipoVehiculo().costoPorHora / 2) : fraccion;
             txtMontoTotal.Text = (result.Hour * ticket.getTipoVehiculo().costoPorHora + fraccion).ToString();
         }
 
