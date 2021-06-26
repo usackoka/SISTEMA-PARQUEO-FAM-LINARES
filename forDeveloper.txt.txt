@@ -1,4 +1,11 @@
-Instalar nuget de Mongo
-* Herramientas -> Administrador de paquetes NuGet -> Consola del Administrador de paquetes
-* Install-Package MongoDB.Driver
+* Instalar Reporting services
+Abrir la linea de comandos de NuGet
+luego
+Install-Package Microsoft.ReportingServices.ReportViewerControl.WebForms
 
+* Instalar mysql
+Instalar mysql y agregar de nombre de administrador "root" contraseña "root"
+nombre de la instancia MySQLSERVER
+
+* Ejecutar query de la base de datos
+archivo "bd"

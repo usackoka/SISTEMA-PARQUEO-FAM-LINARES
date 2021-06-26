@@ -35,6 +35,8 @@ namespace Sistema_parque_fam_linares.Models
                     tipoV.costoPorDia = result.GetInt32(2);
                     tipoV.costoPorMes = result.GetInt32(3);
                 }
+                
+                ConexionMySQL.cerrarBD();
 
                 return tipoV;
             }

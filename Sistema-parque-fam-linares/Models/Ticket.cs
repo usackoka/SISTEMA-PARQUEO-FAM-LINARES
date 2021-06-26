@@ -35,6 +35,8 @@ namespace Sistema_parque_fam_linares.Models
             {
                 this.id = reader.GetInt32(0);
             }
+
+            ConexionMySQL.cerrarBD();
         }
 
         public void update() {
@@ -49,6 +51,8 @@ namespace Sistema_parque_fam_linares.Models
                 ejecutarSQL.Parameters.AddWithValue("@cobroTotal", cobroTotal);
                 ejecutarSQL.Parameters.AddWithValue("@id", id);
                 MySqlDataReader registros = ejecutarSQL.ExecuteReader();
+                
+                ConexionMySQL.cerrarBD();
             }
             catch (Exception ex)
             {
@@ -64,6 +68,8 @@ namespace Sistema_parque_fam_linares.Models
             ejecutarSQL.CommandText = SQL;
             ejecutarSQL.Parameters.AddWithValue("@placa", placa);
             MySqlDataReader result = ejecutarSQL.ExecuteReader();
+                
+            ConexionMySQL.cerrarBD();
 
             return result.HasRows;
         }
@@ -87,6 +93,8 @@ namespace Sistema_parque_fam_linares.Models
                     ticket.idTipoVehiculo = result.GetInt32(2);
                     ticket.id = idTicket;
                 }
+                
+                ConexionMySQL.cerrarBD();
 
                 return ticket;
             }catch(Exception ex)

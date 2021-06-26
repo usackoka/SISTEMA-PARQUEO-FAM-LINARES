@@ -42,6 +42,8 @@ namespace Sistema_parque_fam_linares.Modulos.tickets
                 comboTipoVehiculo.DataSource = ds.Tables["Tipos"];
 
                 comboTipoVehiculo.SelectedValue = 2;
+                
+                ConexionMySQL.cerrarBD();
             }
             catch (Exception ex)
             {
